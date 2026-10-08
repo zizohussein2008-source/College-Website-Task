@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions | Evergreen College</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <div class="logo">Evergreen College</div>
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/about.html">About Us</a>
+          <a href="/faculties.html">Faculties</a>
+          <a href="/programs.html">Programs</a>
+          <a href="/courses.html">Courses</a>
+          <a href="/admissions.html">Admissions</a>
+          <a href="/news.html">News</a>
+          <a href="/events.html">Events</a>
+          <a href="/contact.html">Contact Us</a>
+        </nav>
+        <div class="nav-actions" id="auth-block">
+          <a href="/login" class="btn btn-primary" id="login-link">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="section-heading">
+        <h1>Admissions</h1>
+        <p>Apply today and begin your academic journey.</p>
+      </div>
+
+      <div class="form-wrap">
+        <form id="admission-form">
+          <div class="two-column">
+            <div class="form-group">
+              <label for="full_name">Full Name</label>
+              <input id="full_name" name="full_name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+          </div>
+
+          <div class="two-column">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" required />
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input id="dob" name="dob" type="date" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required></textarea>
+          </div>
+
+          <div class="two-column">
+            <div class="form-group">
+              <label for="previous_school">Previous School</label>
+              <input id="previous_school" name="previous_school" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="faculty">Desired Faculty</label>
+              <select id="faculty" name="faculty" required>
+                <option value="">Select faculty</option>
+                <option>Engineering</option>
+                <option>Computer Science</option>
+                <option>Business</option>
+                <option>Medicine</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="program">Desired Program</label>
+            <select id="program" name="program" required>
+              <option value="">Select program</option>
+              <option>Computer Science</option>
+              <option>Information Technology</option>
+              <option>Business Administration</option>
+              <option>Mechanical Engineering</option>
+              <option>Electrical Engineering</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Application</button>
+          <div class="message"></div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <div class="logo" style="color: #fff;">Evergreen College</div>
+          <p>Preparing students for success.</p>
+        </div>
+        <div>
+          <p>Contact: admissions@college.edu</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>
